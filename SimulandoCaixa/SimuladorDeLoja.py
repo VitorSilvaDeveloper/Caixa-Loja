@@ -1,9 +1,13 @@
+def linha():
+    print('-'*50)
+
+
 def tabela_preco():
 
     print('''Forma de pagamento?
     [1] À vista no dinheiro com 10 % de desconto:
     [2] À vista no cartão com 5% de deconto:
-    [3] Em até 2x no cartão sem juros:
+    [3] Em 2x no cartão sem juros:
     [4] Em 3x ou mais no cartão com 20% de juros:
     '''
     )
@@ -32,9 +36,11 @@ def cartao_Cjuros():
     print(f'O valor da sua compra foi de R${valor_compra:.2f} e o novo valor com juros é de R${novo_valor:.2f} divido {vezes}x com parcelas de R${resultado:.2f}')
         
 while True:
+    linha()
     valor_compra = float(input('Qual o valor da compra? R$'))
+    linha()
     tabela_preco()
-
+    linha()
     opcao = int(input('Qual opção?'))
 
     if opcao == 1:
