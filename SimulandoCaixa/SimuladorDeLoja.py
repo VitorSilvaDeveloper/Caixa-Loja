@@ -34,6 +34,7 @@ def cartao_Cjuros():
     vezes = int(input('Em quantas vezes as compras?'))
     resultado = novo_valor / vezes
     print(f'O valor da sua compra foi de R${valor_compra:.2f} e o novo valor com juros é de R${novo_valor:.2f} divido {vezes}x com parcelas de R${resultado:.2f}')
+ 
         
 while True:
     linha()
